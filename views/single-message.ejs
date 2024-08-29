@@ -1,0 +1,13 @@
+<%- include('header') %>
+<main class="container">
+    <div class="single-message">
+        <div>
+            <h2><%= message.user %></h2>
+            <span><%= message.date %></span>
+        </div>
+        <hr>
+        <p><%= message.text %></p>
+    </div>
+    <a href="/" class="cto">Back to Messages</a>
+</main>
+<%- include('footer') %>
