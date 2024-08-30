@@ -1,7 +1,14 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.ttf") format('truetype');
+    src: url("./fonts/Roboto-Light.ttf") format('truetype');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Gill Sans", serif;
+    font-family: "Roboto", serif;
+    font-weight: 200;
 }
 
 :root {
