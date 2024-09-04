@@ -2,8 +2,8 @@
 <main class="container">
     <div class="single-message">
         <div>
-            <h2><%= message.user %></h2>
-            <span><%= message.date %></span>
+            <h2><%= message.username %></h2>
+            <span><%= message.date.toLocaleDateString() %></span>
         </div>
         <hr>
         <p><%= message.text %></p>

@@ -1,12 +1,12 @@
 <% messages.forEach(message => { %>
-    <a href="/single-message?uuid=<%= message.uuid %>">
+    <a href="/single-message?id=<%= message.id %>">
         <div class="message">
             <div>
                 <span><%= message.text %></span>
-                <span>by <%= message.user %></span>
+                <span>by <%= message.username %></span>
             </div>
             <div>
-                <span>created at: <%= message.date %></span>
+                <span>created at: <%= message.date.toLocaleDateString() %></span>
             </div>
         </div>
     </a>
