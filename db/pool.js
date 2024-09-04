@@ -1,9 +1,9 @@
 const { Pool } = require("pg");
 module.exports = new Pool({
-  host: process.env.PGHOST || "meticulous-empathy.railway.internal",
-  user: process.env.PGUSER || "postgres",
-  database: process.env.PGDATABASE || "railway",
-  password: process.env.PGPASSWORD || "buphecovvsuJeZMdKwZCCrhMhTXXNdCT",
+  host: process.env.PGHOST,
+  user: process.env.PGUSER,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
   port: process.env.PGPORT || "5432",
 });
 
